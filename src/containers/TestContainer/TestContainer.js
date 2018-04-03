@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { extarctDates } from './action';
+import { testRedux } from './action';
 
 
 class TestContainer extends Component {
   static propTypes = {
-    extarctDates: PropTypes.func,
+    testRedux: PropTypes.func,
   };
 
  
@@ -15,31 +15,28 @@ class TestContainer extends Component {
     name: 'med',
   };
   componentDidMount() {
-    this.props.extarctDates(this.data);
+    this.props.testRedux(this.data);
   }
  
   render() {
-    const { days } = this.props;
-    days ? console.log(days.name) : console.log('gggg');
-    const ff = "ff";
+    const { data } = this.props;
     return (
       <div>
-        
-      { days ? `${days }` : `${ff }`}
+        Test
       </div>
     );
   }
 }
 
-function mapStateToProps({ scrollDayReducer }) {
+function mapStateToProps({ testReduxReducer }) {
   return {
-    days: scrollDayReducer.get('data'),
+    data: testReduxReducer.get('data'),
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    extarctDates: data => dispatch(extarctDates(data)),
+    testRedux: data => dispatch(testRedux(data)),
   };
 }
 

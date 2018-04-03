@@ -1,11 +1,11 @@
 import { createStore, combineReducers, compose } from 'redux';
-import { scrollDayReducer } from './containers/TestContainer/reducer';
+import { testReduxReducer } from './containers/TestContainer/reducer';
 
 
 
 export const store = createStore(
   combineReducers({
-    scrollDayReducer: scrollDayReducer,
+    testReduxReducer: testReduxReducer,
   }),
   {}, // initial state
   compose(typeof window.__REDUX_DEVTOOLS_EXTENSION__ !== 'undefined'

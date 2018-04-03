@@ -1,5 +1,5 @@
 import { fromJS } from 'immutable';
-import { EXTRACT_DATES } from './constants';
+import { TEST_REDUX } from './constants';
 
 const initialState = fromJS({
   data: null,
@@ -7,7 +7,7 @@ const initialState = fromJS({
 
 export function scrollDayReducer(state = initialState, action) {
   switch (action.type) {
-    case EXTRACT_DATES:
+    case TEST_REDUX:
       return state.set('data', action.data);
     default:
       return state;

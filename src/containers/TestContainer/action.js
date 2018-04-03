@@ -1,8 +1,8 @@
-import { EXTRACT_DATES } from './constants';
+import { TEST_REDUX } from './constants';
 
 export function extarctDates(data) {
   return {
-    type: EXTRACT_DATES,
+    type: TEST_REDUX,
     data,
   };
 }

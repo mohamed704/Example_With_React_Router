@@ -1,1 +1,1 @@
-export const EXTRACT_DATES = 'EXTRACT_DATES';
+export const TEST_REDUXS = 'TEST_REDUX';
