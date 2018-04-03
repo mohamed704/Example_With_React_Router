@@ -5,7 +5,7 @@ const initialState = fromJS({
   data: null,
 });
 
-export function scrollDayReducer(state = initialState, action) {
+export function testReduxReducer(state = initialState, action) {
   switch (action.type) {
     case TEST_REDUX:
       return state.set('data', action.data);

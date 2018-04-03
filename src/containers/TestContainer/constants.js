@@ -1,1 +1,1 @@
-export const TEST_REDUXS = 'TEST_REDUX';
+export const TEST_REDUX = 'TEST_REDUX';
